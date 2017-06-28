@@ -2,7 +2,8 @@
 
 - Install .net core: https://www.microsoft.com/net/core
 - Install yarn: https://yarnpkg.com/lang/en/docs/install/
-- Install fable .net core fable-elmish template: dotnet new -i "Fable.Template.Elmish.React::*"
+- Install mono on mac: brew install mono
+- Install fable .net core fable-elmish template: dotnet new -i "Fable.Template.Elmish.React::*" (Optional)
 
 ## Build and running the app
 
@@ -25,3 +26,8 @@ Under code there are different folders that represent a code challenge:
 
 - In the "TreeView" folder implement the view to render the tree, and finish the state 
   transition function.
+
+Recommended tools:
+
+Visual studio code: https://code.visualstudio.com/
+ionide: http://ionide.io/
