@@ -29,5 +29,5 @@ Under code there are different folders that represent a code challenge:
 
 Recommended tools:
 
-Visual studio code: https://code.visualstudio.com/
-ionide: http://ionide.io/
+- Visual studio code: https://code.visualstudio.com/
+- ionide: http://ionide.io/
