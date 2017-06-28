@@ -1,0 +1,162 @@
+// Colors
+$purple: #75B81B
+$primary: $purple
+$black: #75B81B
+
+@import '../node_modules/bulma/bulma'
+
+.navbar-bg
+  background-color: $black
+  .nav
+    background-color: $black
+  .title
+    color: white
+    font-weight: 600
+
+.twitter
+  color: #55acee !important // Override bulma
+  border-color: #55acee
+
+.github
+  color: $black !important // Override bulma
+  border-color: $black
+
+div
+  &.panel:first-child
+    margin-top: 20px
+  &.treeview
+    min-width: 100px
+    min-height: 100px
+    max-height: 256px
+    overflow: auto
+    padding: 4px
+    margin-bottom: 20px
+    color: #369
+    border: solid 1px
+    border-radius: 4px
+    ul:first-child:before
+      display: none
+
+.treeview
+  margin: 0
+  padding: 0
+  list-style: none
+  color: $purple
+  ul
+    margin: 0
+    padding: 0
+    list-style: none
+    color: $purple
+    margin-left: 2em
+    position: relative
+    ul
+      margin-left: 0.5em
+    &:before
+      content: ""
+      display: block
+      width: 0
+      position: absolute
+      top: 0
+      left: 0
+      border-left: 1px dotted
+      /* creates a more theme-ready standard for the bootstrap themes
+      bottom: 15px
+  li
+    margin: 0
+    padding: 0 1em
+    line-height: 2em
+    font-weight: 600
+    position: relative
+  ul li:before
+    content: ""
+    display: block
+    width: 10px
+    font-weight: 50
+    height: 0
+    border-top: 1px solid
+    margin-top: -1px
+    position: absolute
+    top: 1em
+    left: 0
+
+.tree-indicator
+  margin-right: 5px
+  cursor: pointer
+
+.file-indicator
+  float: left
+  margin-right: 5px
+
+.treeview li
+  a
+    text-decoration: none
+    color: inherit
+    cursor: pointer
+  button
+    text-decoration: none
+    color: inherit
+    border: none
+    background: transparent
+    margin: 0px 0px 0px 0px
+    padding: 0px 0px 0px 0px
+    outline: 0
+    &:active, &:focus
+      text-decoration: none
+      color: inherit
+      border: none
+      background: transparent
+      margin: 0px 0px 0px 0px
+      padding: 0px 0px 0px 0px
+      outline: 0
+
+@-webkit-keyframes neon1
+  from
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #B6FF00, 0 0 70px #B6FF00, 0 0 80px #B6FF00, 0 0 100px #B6FF00, 0 0 150px #B6FF00
+
+  to
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #B6FF00, 0 0 35px #B6FF00, 0 0 40px #B6FF00, 0 0 50px #B6FF00, 0 0 75px #B6FF00
+
+
+
+.on
+    -webkit-animation: neon1 1.5s ease-in-out infinite alternate
+    -moz-animation: neon1 1.5s ease-in-out infinite alternate
+    animation: neon1 1.5s ease-in-out infinite alternate
+
+
+.off
+  color: #75B81B
+    -webkit-animation: none
+    -moz-animation: none
+    animation: none
+
+.neon-on
+  background-color: #222222
+  background: repeating-linear-gradient(45deg, #2b2b2b 0%, #2b2b2b 10%, #222222 0%, #222222 50%) 15px
+  color: #fff
+  font-family: Monoton
+  -webkit-animation: neon1 1.5s ease-in-out infinite alternate
+  -moz-animation: neon1 1.5s ease-in-out infinite alternate
+  animation: neon1 1.5s ease-in-out infinite alternate
+  text-align: center;
+  font-size: 7em;
+  margin: 20px 0 20px 0
+
+.neon-off
+  text-align: center
+  font-family: Monoton
+  font-size: 7em
+  margin: 20px 0 20px 0
+  background-color: #222222
+  background: repeating-linear-gradient(45deg, #2b2b2b 0%, #2b2b2b 10%, #222222 0%, #222222 50%) 15px
+  color: #75B81B
+  -webkit-animation: none
+  -moz-animation: none
+  animation: none  
+
+// Needed otherwise iframes show a disabled scrollbar
+html,
+body
+  font-family: 'Carrois Gothic', sans-serif
+  overflow-y: auto
+  overflow-x: hidden
