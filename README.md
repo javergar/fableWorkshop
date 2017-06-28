@@ -1,8 +1,8 @@
-## Intallation instructions
+## prerequisites
 
-Install .net core: https://www.microsoft.com/net/core
-Install yarn: https://yarnpkg.com/lang/en/docs/install/
-Install fable .net core fable-elmish template: dotnet new -i "Fable.Template.Elmish.React::*"
+- Install .net core: https://www.microsoft.com/net/core
+- Install yarn: https://yarnpkg.com/lang/en/docs/install/
+- Install fable .net core fable-elmish template: dotnet new -i "Fable.Template.Elmish.React::*"
 
 ## Build and running the app
 
